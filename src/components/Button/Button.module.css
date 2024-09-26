@@ -1,0 +1,23 @@
+.button{
+  width: 12%;
+  height: 54px;
+
+  background-color: var(--blue-dark);
+  color: #FFFFFF;
+  font-weight: 600;
+
+  border: 1px solid #262626;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 20px;
+  }
+}
+
+.button:hover{
+  background-color: var(--blue);
+}

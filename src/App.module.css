@@ -1,0 +1,15 @@
+.wrapper{
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -30px
+}

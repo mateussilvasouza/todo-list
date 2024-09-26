@@ -2,6 +2,7 @@
   width: 87%;
   max-width: 800px;
   background-color: var(--gray-500);
+  color: var(--gray-200);
   border: 1px solid #000000;
   height: 54px;
   border-radius: 8px;

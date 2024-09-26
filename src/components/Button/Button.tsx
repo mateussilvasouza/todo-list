@@ -1,13 +1,11 @@
-import { ButtonHTMLAttributes } from 'react'
 import styles from './Button.module.css'
 
-type Props = React.DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>,HTMLButtonElement>
+type Props = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>,HTMLButtonElement>
 
-export function Button({children}: Props){
+export function Button({children, ...rest}: Props){
   return (
-    <button className={styles.button}>
+    <button className={styles.button} {...rest}>
       {children} 
-      <img src="src/assets/button.png" alt="Adicionar" />
     </button>
   )
 }

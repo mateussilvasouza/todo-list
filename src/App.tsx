@@ -74,7 +74,7 @@ function App() {
           {tasks.length === 0 ?
             (<Empty/>) : 
             (
-            <div>
+            <div className={styles.tasksListItens}>
               {tasks.map(task =>
               <Item key={task.id} data={task} removeTask={handleRemoveTask} toggleTask={handleToggleTask} />
               )}

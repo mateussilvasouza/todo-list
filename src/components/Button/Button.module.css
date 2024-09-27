@@ -2,7 +2,7 @@
   height: 3.25rem;
   padding: 1rem;
 
-  background-color: var(--blue-dark);
+  background-color: var(--blue-dark) !important;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 0.875;
@@ -21,5 +21,5 @@
 }
 
 .button:hover{
-  background-color: var(--blue);
+  background-color: var(--blue) !important;
 }

@@ -1,0 +1,23 @@
+.container{
+  width: 100vh;
+  max-width: 100%;
+
+  background-color: var(--gray-600);
+  padding: 2rem 0.2rem;
+
+  border: 1px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: absolute;
+  left: 0rem;
+  z-index: 2;
+}

@@ -1,10 +1,11 @@
 # ToDoList App 📝
 
-**ToDoList** é uma aplicação simples e intuitiva para gerenciamento de tarefas, desenvolvida para ajudar você a organizar seu dia a dia de forma eficiente. Com uma interface amigável, o projeto oferece funcionalidades básicas para criação e exclusão de tarefas, além de marcar tarefas como concluídas.
+**ToDoList** é uma aplicação simples e intuitiva para gerenciamento de tarefas, desenvolvida para ajudar você a organizar seu dia a dia de forma eficiente. Com uma interface amigável, o projeto oferece funcionalidades básicas para criação, edição e exclusão de tarefas, além de marcar tarefas como concluídas.
 
 ## Funcionalidades 🌟
 
-- **Adicionar Tarefas**: Crie tarefas com título e descrição.
+- **Adicionar Tarefas**: Crie tarefas com título.
+- **Editar Tarefas**: Edite o titulo das tarefas.
 - **Excluir Tarefas**: Remova tarefas desnecessárias com facilidade.
 - **Marcar como Concluída**: Identifique tarefas concluídas de maneira visual.
 

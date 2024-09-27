@@ -45,10 +45,13 @@ function App() {
   }
 
    
-  function handleToggleTask(id: number){
+  function handleToggleTask(data: ITask){
     const updatedTask = tasks.map(task => {
-      if(task.id === id){
-        return {...task, isChecked: !task.isChecked}
+      if(task.id === data.id){
+        return {
+          ...task, 
+          isChecked: data.text === task.text ? !task.isChecked : task.isChecked, 
+          text: data.text}
       }
       return {...task}
     })

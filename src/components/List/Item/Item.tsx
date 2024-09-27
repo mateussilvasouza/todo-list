@@ -1,21 +1,28 @@
-import { Check, Trash } from "@phosphor-icons/react"
+import { Check, Pencil, Trash } from "@phosphor-icons/react"
 import { ITask } from "../../../App"
 import styles from './Item.module.css'
+import { useState } from "react"
+import { Card } from "../../Card/Card"
 
 interface Props{
   data: ITask
   removeTask: (id: number) => void
-  toggleTask: (id: number) => void
+  toggleTask: (data: ITask) => void
 }
 
 export function Item({data, removeTask, toggleTask}:Props){
+  const [cardIsOpen, setCardIsOpen] = useState(false)
 
   function handleRemove(){
     removeTask(data.id)
   }
 
   function handleTaskToggle(){
-    toggleTask(data.id)
+    toggleTask(data)
+  }
+
+  function handleOpenCard(){
+    setCardIsOpen(!cardIsOpen)
   }
 
   const checkboxCheckedClassname = data.isChecked
@@ -40,9 +47,19 @@ const paragraphCheckedClassname = data.isChecked
         </label>
       </div>
 
-      <button onClick={handleRemove}>
-        <Trash size={16} color="#808080"/>
-      </button>
+      <div>
+        <button onClick={handleOpenCard}>
+          <Pencil size={16} color="#bb2727"/>
+        </button>
+
+        <button onClick={handleRemove}>
+          <Trash size={16} color="#808080"/>
+        </button>
+      </div>
+
+      {cardIsOpen &&
+       <Card data={data} toggleTask={toggleTask} cardIsOpen={handleOpenCard}/>
+      }
     </div>
   )
 }
